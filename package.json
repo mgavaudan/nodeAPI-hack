@@ -1,5 +1,5 @@
 {
-  "name": "Auxcare-API",
+  "name": "Node-API",
   "main": "server.js",
   "dependencies": {
     "body-parser": "^1.15.2",

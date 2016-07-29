@@ -37,7 +37,7 @@ app.get('/setup', function(req, res) {
 
   // create a sample user
   var nick = new User({ 
-    name: 'Nick Cerminara', 
+    email: 'test@gmail.com', 
     password: 'password',
     admin: true 
   });
@@ -68,7 +68,7 @@ apiRoutes.post('/authenticate', function(req, res) {
 
   // find the user
   User.findOne({
-    name: req.body.name
+    email: req.body.email
   }, function(err, user) {
 
     if (err) throw err;
